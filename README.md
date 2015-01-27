@@ -11,6 +11,9 @@ A script your OSX will be glad to call its first.
 4. Set [OSX sensitive defaults](https://github.com/joaocunha/OSeXy/blob/master/osx.sh)
 5. Download IE8, IE9 and IE10 VMs from [modern.ie](https://www.modern.ie/en-us/virtualization-tools#downloads)
 
+## How to use
+`sh install.sh`
+
 ## Disclaimer
 OSeXy is a WIP personal project, hence it's very opinionated, poorly tested and incomplete. I'll improve it over time, but maybe you can find one or two niceties on how I tackle OSX bootstrapping.
 
