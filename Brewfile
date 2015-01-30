@@ -1,4 +1,5 @@
 bash
+beeftornado/rmtree/brew-rmtree
 brew-cask
 coreutils
 findutils
