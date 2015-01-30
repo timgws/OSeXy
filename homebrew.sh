@@ -19,7 +19,7 @@ else
 fi
 
 cecho "Updating homebrew recipes..." $green
-brew update
+brew update && brew upgrade
 
 # Workaround to loop through all taps. They can't be installed
 # with brew tap x1 x2 x3 ..., they need to be ran individually
@@ -31,6 +31,18 @@ brew install $(cat $DIR/Brewfile|grep -v "#")
 
 # Updates the PATH for coreutils
 PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
+
+cecho "Installing nvm..." $green
+mkdir ~/.nvm
+ln -s "$(brew --prefix nvm)/nvm.sh" ~/.nvm/nvm.sh
+
+echo "export NVM_DIR=~/.nvm" >> ~/.zshrc
+echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.zshrc
+
+source ~/.nvm/nvm.sh
+
+cecho "Installing node..." $green
+nvm install stable
 
 cecho "End of brew install. Cleaning up..." $green
 brew cleanup
