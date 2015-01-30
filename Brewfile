@@ -4,6 +4,7 @@ brew-cask
 coreutils
 findutils
 git
+git-extras
 homebrew/dupes/grep
 the_silver_searcher
 wget
