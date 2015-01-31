@@ -32,6 +32,9 @@ brew install $(cat $DIR/Brewfile|grep -v "#")
 # Updates the PATH for coreutils
 PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
+# Enable shims and autocompletion for rbenv
+echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.zshrc
+
 cecho "Installing nvm..." $green
 mkdir ~/.nvm
 ln -s "$(brew --prefix nvm)/nvm.sh" ~/.nvm/nvm.sh

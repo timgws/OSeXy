@@ -7,6 +7,8 @@ git
 git-extras
 homebrew/dupes/grep
 nvm
+rbenv
+ruby-build
 the_silver_searcher
 wget
 z
