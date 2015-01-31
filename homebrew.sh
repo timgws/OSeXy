@@ -32,6 +32,9 @@ brew install $(cat $DIR/Brewfile|grep -v "#")
 # Updates the PATH for coreutils
 PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
 
+# Path to Z
+echo "source /usr/local/etc/profile.d/z.sh" >> ~/.zshrc
+
 # Enable shims and autocompletion for rbenv
 echo 'if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi' >> ~/.zshrc
 

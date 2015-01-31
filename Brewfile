@@ -3,6 +3,7 @@ beeftornado/rmtree/brew-rmtree
 brew-cask
 coreutils
 findutils
+gifify
 git
 git-extras
 homebrew/dupes/grep
@@ -12,3 +13,4 @@ ruby-build
 the_silver_searcher
 wget
 z
+zsh
