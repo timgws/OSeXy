@@ -30,7 +30,7 @@ cecho "Homebrew is installing formulas..." $green
 brew install $(cat $DIR/Brewfile|grep -v "#")
 
 # Updates the PATH for coreutils
-PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
+PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 
 # Path to Z
 echo "source /usr/local/etc/profile.d/z.sh" >> ~/.zshrc
