@@ -28,6 +28,7 @@ Inspired by the work of these fine gentlemen:
 * [Mathias Bynens](https://github.com/mathiasbynens/dotfiles)
 * [Matthew Mueller](http://lapwinglabs.com/blog/hacker-guide-to-setting-up-your-mac)
 * [Zeno Rocha](https://gist.github.com/zenorocha/7159780)
+* [Ahmed El Gabri](https://github.com/ahmedelgabri/dotfiles)
 * [Ben Alman](https://github.com/cowboy/dotfiles)
 * [Brandon Brown](https://gist.github.com/brandonb927/3195465)
 * [Eduardo Lundgren](https://github.com/eduardolundgren/dotfiles)
