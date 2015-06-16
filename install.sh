@@ -6,7 +6,7 @@ DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 
 # Includes color-echo
-. "$DIR/functions/cecho.sh"
+. "cecho.sh"
 
 cecho "######################################################" $cyan
 cecho "   Welcome to OSeXy! We will get your OSX turned on   " $cyan
