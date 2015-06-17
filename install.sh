@@ -2,6 +2,8 @@
 
 clear
 
+STEPS=6
+
 DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 
@@ -28,24 +30,31 @@ sudo -v
 # Run a keep-alive to update existing `sudo` time stamp until script has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-cecho "STEP 1/5: Check for updates" $cyan
+cecho "STEP 1/{$STEPS}: Check for updates" $cyan
 softwareupdate --verbose --install --all
 
-cecho "STEP 2/5: Install Xcode command line tools" $cyan
+cecho "STEP 2/{$STEPS}: Install Xcode command line tools" $cyan
 cecho "(If a dialog shows up, press <Install>)" $green
 xcode-select --install
 
-cecho "STEP 3/5: Install homebrew and its counterparts" $cyan
+cecho "STEP 3/{$STEPS}: Install homebrew and its counterparts" $cyan
 . "$DIR/homebrew.sh"
 
-cecho "STEP 4/5: Set sensitive OSX defaults" $cyan
+cecho "STEP 4/{$STEPS}: Set sensitive OSX defaults" $cyan
 cecho "This will change several of your OSX settings. Go ahead? [y/n]" $magenta
 read -r response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
     . "$DIR/osx.sh"
 fi
 
-cecho "STEP 5/5: Download Modern.IE Virtual Machines" $cyan
+cecho "STEP 5/${STEPS}: Install MAMP?" $cyan
+cecho "This will download and install MAMP. Go ahead? [y/n]" $magenta
+read -r response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+    sh "$DIR/mamp.sh"
+fi
+
+cecho "STEP 6/{$STEPS}: Download Modern.IE Virtual Machines" $cyan
 cecho "This may take a few hours, and you can always run modern.ie.sh manually later. Do it now? [y/n]" $magenta
 read -r response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
