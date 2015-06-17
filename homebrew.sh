@@ -27,7 +27,7 @@ cecho "Installing taps..." $green
 while read in; do brew tap "$in"; done < "$DIR/Tapfile"
 
 cecho "Homebrew is installing formulas..." $green
-brew install $(cat $DIR/Brewfile|grep -v "#")
+bash spawn.sh "brew install" Brewfile
 
 # Updates the PATH for coreutils
 PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
@@ -60,7 +60,7 @@ cecho "Updating cask..." $green
 brew cask update
 
 cecho "Homebrew is installing casks..." $green
-brew cask install $(cat $DIR/Caskfile|grep -v "#")
+bash spawn.sh "brew cask install" Caskfile
 
 cecho "End of brew cask install. Cleaning up..." $green
 brew cask cleanup
