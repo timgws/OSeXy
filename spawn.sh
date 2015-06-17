@@ -27,3 +27,10 @@ for x in `seq 1 $PROC_TIMES`; do
     FROM=$(($FROM+$LINES_DIV))
     TO=$(($FROM+$LINES_DIV))
 done
+
+
+for job in `jobs -p`; do
+    echo "Waiting for process $job to finish install...";
+    wait $job || let "FAIL+=1"
+done
+
