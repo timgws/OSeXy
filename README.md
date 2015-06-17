@@ -1,15 +1,14 @@
 # OSeXy
 A script your OSX will be glad to call its first.
 
--------------------------------------------------
-
 **OSeXy** is a bootstrap intended to be the very first script to be ran on a fresh OSX install. It will:
 
 1. Check for system updates
 2. Install Xcode command line tools
-3. Install homebrew and several [formulas](https://github.com/joaocunha/OSeXy/blob/master/Brewfile) & [casks](https://github.com/joaocunha/OSeXy/blob/master/Caskfile)
-4. Set [OSX sensitive defaults](https://github.com/joaocunha/OSeXy/blob/master/osx.sh)
-5. Download IE8, IE9 and IE10 VMs from [modern.ie](https://www.modern.ie/en-us/virtualization-tools#downloads)
+3. Install homebrew and several [formulas](https://github.com/timgws/OSeXy/blob/master/Brewfile) & [casks](https://github.com/timgws/OSeXy/blob/master/Caskfile)
+4. Set [OSX sensitive defaults](https://github.com/timgws/OSeXy/blob/master/osx.sh)
+5. Download and install [MAMP](https://www.mamp.info)
+6. Download IE8, IE9 and IE10 VMs from [modern.ie](https://www.modern.ie/en-us/virtualization-tools#downloads)
 
 ## How to use
 `sh install.sh`
