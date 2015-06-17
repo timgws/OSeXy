@@ -2,6 +2,7 @@
 #
 #  sh spawn.sh "brew cask install" Brewfile
 #
+. cecho.sh
 if [ $# -ne 2 ]; then
     echo "Usage: $0 <COMMAND> <FILE>";
     exit 1;
@@ -12,15 +13,17 @@ COMMAND=$1
 
 LINES=`cat $2 | wc -l`
 
-LINES_DIV_FOUR=$(($LINES/4));
+PROC_TIMES=5
+LINES_DIV=$(($LINES/$PROC_TIMES));
 
 FROM=1
-TO=$LINES_DIV_FOUR
-for x in `seq 1 4`; do
-    echo "${FROM} --> ${TO}";
+TO=$LINES_DIV
+for x in `seq 1 $PROC_TIMES`; do
+    APPLICATIONS=`cat $FILE | sed -e "${FROM},${TO}!d" | tr '\n' ' '`
+    cecho "Launching ${cyan}$COMMAND${normal}${bold} for the following applications: ${green}${APPLICATIONS}";
 
-    FROM=$(($FROM+$LINES_DIV_FOUR))
-    TO=$(($FROM+$LINES_DIV_FOUR))
+    $COMMAND $APPLICATIONS &
 
-    (setsid $COMMAND `cat $FILE | sed "${FROM},${TO}!d"` &)
+    FROM=$(($FROM+$LINES_DIV))
+    TO=$(($FROM+$LINES_DIV))
 done
