@@ -61,6 +61,8 @@ if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
     . "$DIR/modern.ie.sh"
 fi
 
+. "$DIR/dock.sh"
+
 cecho "Some changes will only take effect after rebooting. Do it now? [y/n]" $magenta
 read -r response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
