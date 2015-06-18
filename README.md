@@ -21,8 +21,12 @@ Please check the source before using it.
 
 This repository has been forked from [João Cunha](https://github.com/joaocunha)'s original OSeXy, mainly because we are different human beings, with different highlighting tastes, and I own VMWare/MS Office licenses!
 
-## Support
-Tested on Yosemite 10.10.1 only.
+## OS X releases supported by OSeXy
+
+* OS X 10.10.3 (Yosemite)
+* OS X 10.10.1 (Yosemite)
+
+Currently only Yosemite is supported, however, newer releases should have support, too.
 
 ## Credits
 Inspired by the work of these fine gentlemen:
