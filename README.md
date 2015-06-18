@@ -10,14 +10,6 @@ A script your OSX will be glad to call its first.
 5. Download and install [MAMP](https://www.mamp.info)
 6. Download IE8, IE9 and IE10 VMs from [modern.ie](https://www.modern.ie/en-us/virtualization-tools#downloads)
 
-## Warning
-
-This script is designed to be run on a new, fresh, cleanly installed Mac.
-
-Not doing so may have unintended consiquences.
-
-This script will clear your Dock, and may change a handful of settings.
-
 ## How to use
 
     ## Download OSeXy from Git/GitHub
@@ -27,6 +19,14 @@ This script will clear your Dock, and may change a handful of settings.
     
     ## Run Installer
     sh install.sh
+
+## Warning
+
+    This script is designed to be run on a new, fresh, cleanly installed Mac.
+    
+    Not doing so may have unintended consiquences.
+    
+    This script will clear your Dock, and may change a handful of settings.
 
 ## Disclaimer
 OSeXy is a WIP personal project, hence it's very opinionated, poorly tested and incomplete. I'll improve it over time, but maybe you can find one or two niceties on how I tackle OSX bootstrapping.
