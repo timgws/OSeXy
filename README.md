@@ -20,15 +20,17 @@ A script your OSX will be glad to call its first.
     ## Run Installer
     sh install.sh
 
-## Warning
+## Disclaimer
 
+    TL;DR
+    ----------
+    
     This script is designed to be run on a new, fresh, cleanly installed Mac.
     
     Not doing so may have unintended consiquences.
     
     This script will clear your Dock, and may change a handful of settings.
 
-## Disclaimer
 OSeXy is a WIP personal project, hence it's very opinionated, poorly tested and incomplete. I'll improve it over time, but maybe you can find one or two niceties on how I tackle OSX bootstrapping.
 
 Please check the source before using it.
