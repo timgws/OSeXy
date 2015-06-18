@@ -73,7 +73,9 @@ fi
 echo $green
 
 cat <<THIS
-    All commands have been installed with the prefix 'g'.
+    GNU coreutils & bash 4 have been installed.
+
+    All coreutils commands have been installed with the prefix 'g'.
     If you really need to use these commands with their normal names, you
     can add a "gnubin" directory to your PATH from your bashrc like:
 
@@ -84,6 +86,10 @@ cat <<THIS
 
         MANPATH="/usr/local/opt/coreutils/libexec/gnubin:\$MANPATH"
 
+    If you want to use Bash 4 as your login shell, it must be
+    added to your /etc/shells file:
+
+        /usr/local/bin/bash
 
 THIS
 
