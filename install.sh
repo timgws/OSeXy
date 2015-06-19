@@ -63,16 +63,7 @@ fi
 
 . "$DIR/dock.sh"
 
-cecho "Some changes will only take effect after rebooting. Do it now? [y/n]" $magenta
-read -r response
-if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
-    shutdown -r now "OSeXy finished last - rebooting..."
-    exit
-fi
-
-echo $green
-
-cat <<THIS
+cat > "/Users/`whoami`/Desktop/OSeXy Install Notes.txt" <<THIS
     GNU coreutils & bash 4 have been installed.
 
     All coreutils commands have been installed with the prefix 'g'.
@@ -93,6 +84,11 @@ cat <<THIS
 
 THIS
 
-echo $normal
+cecho "Some changes will only take effect after rebooting. Do it now? [y/n]" $magenta
+read -r response
+if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+    sudo shutdown -r now "OSeXy finished last - rebooting..."
+    exit
+fi
 
 cecho "We are done! Do not forget to reboot." $magenta
