@@ -5,9 +5,8 @@ clear_dock () {
 }
 
 dock () {
-    DIRECTORY="/Users/`whoami`/Applications/$1.app";
-    XML="<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>${DIRECTORY}</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>"
-    defaults write com.apple.dock persistent-apps -array-add "$XML"
+    DIRECTORY="/Users/`whoami`/Applications/$1";
+    full_dock "$DIRECTORY"
 }
 
 full_dock () {
