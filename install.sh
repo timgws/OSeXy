@@ -14,6 +14,7 @@ cecho "######################################################" $cyan
 cecho "   Welcome to OSeXy! We will get your OSX turned on   " $cyan
 cecho "   and ready for action. Keep in mind OSeXy is very   " $cyan
 cecho "    opinionated and WILL change stuff in your Mac.    " $cyan
+cecho "######################################################" $cyan
 cecho "          CHECK THE SOURCE BEFORE CONTINUING          " $cyan
 cecho "######################################################" $cyan
 
