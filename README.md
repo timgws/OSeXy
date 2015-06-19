@@ -14,7 +14,8 @@ A script your OSX will be glad to call its first.
 
     ## Download OSeXy from Git/GitHub
     git clone git@github.com:timgws/OSeXy.git || \
-        ( curl -o osexy.zip https://codeload.github.com/timgws/OSeXy/zip/master && unzip osexy.zip )
+        ( curl -o osexy.zip https://codeload.github.com/timgws/OSeXy/zip/master \
+          && unzip osexy.zip )
     cd OSeXy*
     
     ## Run Installer
