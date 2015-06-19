@@ -22,7 +22,7 @@ This script will clear your Dock, and may change a handful of settings.
 
     ## Download OSeXy from Git/GitHub
     git clone git@github.com:timgws/OSeXy.git || \
-        curl -o osexy.zip https://codeload.github.com/timgws/OSeXy/zip/master
+        ( curl -o osexy.zip https://codeload.github.com/timgws/OSeXy/zip/master && unzip osexy.zip )
     cd OSeXy*
     
     ## Run Installer
