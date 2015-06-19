@@ -2,7 +2,6 @@ autoconf
 bash
 beeftornado/rmtree/brew-rmtree
 brew-cask
-caskroom/homebrew-versions/java6
 coreutils
 elinks
 ffmpeg
@@ -29,7 +28,6 @@ nvm
 openssl
 pass
 pcre
-phpstorm
 pkg-config
 pwgen
 rbenv
