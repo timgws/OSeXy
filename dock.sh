@@ -30,5 +30,6 @@ full_dock "/Applications/MAMP/MAMP"
 dock "Skype"
 dock "Spotify"
 dock "PhpStorm"
+dock "MacVim"
 dock "VMWare Fusion"
 restart_dock
