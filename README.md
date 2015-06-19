@@ -9,7 +9,7 @@ A script your OSX will be glad to call its first.
 4. Set [OSX sensitive defaults](https://github.com/timgws/OSeXy/blob/master/osx.sh)
 5. Download and install [MAMP](https://www.mamp.info)
 6. Rearange [all the items in your dock](https://github.com/timgws/OSeXy/blob/master/dock.sh)
-7. Download IE8, IE9 and IE10 VMs from [modern.ie](https://www.modern.ie/en-us/virtualization-tools#downloads)
+7. Download IE9 and IE11 VMs from [modern.ie](https://www.modern.ie/en-us/virtualization-tools#downloads)
 
 ## How to use
 
