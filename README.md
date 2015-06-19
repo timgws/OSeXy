@@ -8,10 +8,12 @@ A script your OSX will be glad to call its first.
 3. Install homebrew and several [formulas](https://github.com/timgws/OSeXy/blob/master/Brewfile) & [casks](https://github.com/timgws/OSeXy/blob/master/Caskfile)
 4. Set [OSX sensitive defaults](https://github.com/timgws/OSeXy/blob/master/osx.sh)
 5. Download and install [MAMP](https://www.mamp.info)
-6. Download IE8, IE9 and IE10 VMs from [modern.ie](https://www.modern.ie/en-us/virtualization-tools#downloads)
+6. Rearange [all the items in your dock](https://github.com/timgws/OSeXy/blob/master/dock.sh)
+7. Download IE8, IE9 and IE10 VMs from [modern.ie](https://www.modern.ie/en-us/virtualization-tools#downloads)
 
 ## How to use
 
+```bash
     ## Download OSeXy from Git/GitHub
     git clone git@github.com:timgws/OSeXy.git || \
         ( curl -o osexy.zip https://codeload.github.com/timgws/OSeXy/zip/master \
@@ -20,6 +22,7 @@ A script your OSX will be glad to call its first.
     
     ## Run Installer
     sh install.sh
+```
 
 ## Disclaimer
 
