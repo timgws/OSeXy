@@ -13,6 +13,8 @@ A script your OSX will be glad to call its first.
 
 ## How to use
 
+Copy and paste the following code into the `Terminal` app on your Mac:
+
 ```bash
     ## Download OSeXy from Git/GitHub
     git clone git@github.com:timgws/OSeXy.git || \
