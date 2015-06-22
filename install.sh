@@ -60,6 +60,8 @@ fi
 cecho "STEP 6/${STEPS}: Installing nodejs packages..." $cyan
 while read in; do sudo npm install -g "$in"; done < "$DIR/npm"
 
+GNUBIN=`brew --prefix coreutils`;
+
 cat > "/Users/`whoami`/Desktop/OSeXy Install Notes.txt" <<THIS
     GNU coreutils & bash 4 have been installed.
 
@@ -67,12 +69,12 @@ cat > "/Users/`whoami`/Desktop/OSeXy Install Notes.txt" <<THIS
     If you really need to use these commands with their normal names, you
     can add a "gnubin" directory to your PATH from your bashrc like:
 
-        PATH="/usr/local/opt/coreutils/libexec/gnubin:\$PATH"
+        PATH="$GNUBIN/libexec/gnubin:\$PATH"
 
     Additionally, you can access their man pages with normal names if you add
     the "gnuman" directory to your MANPATH from your bashrc as well:
 
-        MANPATH="/usr/local/opt/coreutils/libexec/gnubin:\$MANPATH"
+        MANPATH="$GNUBIN/libexec/gnuman:\$MANPATH"
 
     If you want to use Bash 4 as your login shell, it must be
     added to your /etc/shells file:
