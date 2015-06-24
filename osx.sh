@@ -568,4 +568,13 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 defaults write com.google.Chrome ExtensionInstallSources -array "https://gist.githubusercontent.com/" "http://userscripts.org/*"
 defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://gist.githubusercontent.com/" "http://userscripts.org/*"
 
+###############################################################################
+# Cyberduck                                                                   #
+###############################################################################
+
+# Show hidden files, always use MacVim
+defaults write ch.sudo.cyberduck browser.showHidden -bool true
+defaults write ch.sudo.cyberduck editor.alwaysUseDefault -bool true
+defaults write ch.sudo.cyberduck editor.bundleIdentifier -string "org.vim.macvim"
+
 echo "Done. Note that some of these changes require a logout/restart to take effect."
