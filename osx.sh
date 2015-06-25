@@ -577,4 +577,9 @@ defaults write ch.sudo.cyberduck browser.showHidden -bool true
 defaults write ch.sudo.cyberduck editor.alwaysUseDefault -bool true
 defaults write ch.sudo.cyberduck editor.bundleIdentifier -string "org.vim.macvim"
 
+###############################################################################
+# iTerm2                                                                      #
+###############################################################################
+defaults write com.googlecode.iterm2 UseLionStyleFullscreen -bool false
+
 echo "Done. Note that some of these changes require a logout/restart to take effect."
