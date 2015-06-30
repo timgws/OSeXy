@@ -66,6 +66,8 @@ brew cask update
 cecho "Homebrew is installing casks..." $green
 bash spawn.sh "brew cask install" Caskfile
 
+brew cask install `cat $DIR/Caskfile`
+
 cecho "End of brew cask install. Cleaning up..." $green
 brew cask cleanup
 
