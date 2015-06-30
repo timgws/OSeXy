@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-clear
-
 STEPS=6
 
 DIR="${BASH_SOURCE%/*}"
@@ -9,6 +7,18 @@ if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 
 # Includes color-echo
 . "cecho.sh"
+
+OSXVERSION=`sw_vers -productVersion | sed -E 's/([0-9]*\.[0-9]*).*/\1/'`
+
+if [ "$OSXVERSION" != "10.10" ]; then
+    cecho "You must upgrade OS X to version 10.10 to use this installer!" $red
+    cecho "Please go to the App Store, click on the upgrades tab" $cyan
+    cecho "and get the latest version of the operating system" $cyan;
+    echo;
+    exit 2;
+fi
+
+clear
 
 cecho "######################################################" $cyan
 cecho "   Welcome to OSeXy! We will get your OSX turned on   " $cyan
