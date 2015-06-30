@@ -43,12 +43,12 @@ sudo -v
 # Run a keep-alive to update existing `sudo` time stamp until script has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
-cecho "STEP 1/${STEPS}: Install Xcode command line tools" $cyan
+cecho "STEP 1/${STEPS}: Check for updates" $cyan
+softwareupdate --verbose --install --all
+
+cecho "STEP 2/${STEPS}: Install Xcode command line tools" $cyan
 cecho "(If a dialog shows up, press <Install>)" $green
 xcode-select --install
-
-cecho "STEP 2/${STEPS}: Check for updates" $cyan
-softwareupdate --verbose --install --all
 
 cecho "STEP 3/${STEPS}: Install homebrew and its counterparts" $cyan
 . "$DIR/homebrew.sh"

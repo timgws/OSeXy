@@ -3,7 +3,6 @@ bash
 beeftornado/rmtree/brew-rmtree
 brew-cask
 coreutils
-elinks
 ffmpeg
 findutils
 freetype

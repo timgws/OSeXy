@@ -29,6 +29,8 @@ while read in; do brew tap "$in"; done < "$DIR/Tapfile"
 cecho "Homebrew is installing formulas..." $green
 bash spawn.sh "brew install" Brewfile
 
+brew install --devel elinks
+
 # Updates the PATH for coreutils
 PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 
