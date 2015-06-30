@@ -36,6 +36,8 @@ if [[ ! $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
 fi
 
 cecho "Good. Can I haz sudo?" $magenta
+echo "Note: It might look like you are not entering your password";
+echo "Just keep typing your user's password, and press enter.";
 sudo -v
 
 # Run a keep-alive to update existing `sudo` time stamp until script has finished
