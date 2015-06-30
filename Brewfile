@@ -16,6 +16,7 @@ gnu-getopt
 gnupg
 homebrew/dupes/grep
 htop-osx
+httrack
 imagemagick
 jpeg
 lame
