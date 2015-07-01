@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-STEPS=6
+STEPS=7
 
 DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
@@ -71,6 +71,13 @@ fi
 
 cecho "STEP 6/${STEPS}: Installing nodejs packages..." $cyan
 while read in; do sudo npm install -g "$in"; done < "$DIR/npm"
+
+cecho "STEP 7/${STEPS}: Grabbing server-config package..." $cyan
+git clone https://github.com/timgws/server-config.git $HOME/.server-config
+DFILES=$HOME/.server-config/dot-files;
+cp $DFILES/.vimrc $HOME
+cp $DFILES/.inputrc $HOME
+cp $DFILES/.bash_profile $HOME
 
 GNUBIN=`brew --prefix coreutils`;
 
