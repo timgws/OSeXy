@@ -78,6 +78,8 @@ DFILES=$HOME/.server-config/dot-files;
 cp $DFILES/.vimrc $HOME
 cp $DFILES/.inputrc $HOME
 cp $DFILES/.bash_profile $HOME
+echo "source ~/.bashrc" > $HOME/.bash_profile
+chmod +x $HOME/.bash_profile $HOME/.bashrc
 
 GNUBIN=`brew --prefix coreutils`;
 
