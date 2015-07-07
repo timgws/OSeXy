@@ -24,6 +24,6 @@ normal=`tput sgr0`
 # arg $1 = message
 # arg $2 = Color
 cecho() {
-    echo "${2}${bold}==> ${1}${normal}"
+    /usr/bin/printf "${2}${bold}==> ${1}${normal}\n"
     return
 }
