@@ -10,12 +10,18 @@ if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
 
 OSXVERSION=`sw_vers -productVersion | sed -E 's/([0-9]*\.[0-9]*).*/\1/'`
 
-if [ "$OSXVERSION" != "10.10" ]; then
+if [ "$OSXVERSION" != "10.10" ] && [ "$OSXVERSION" != "10.11" ]; then
     cecho "You must upgrade OS X to version 10.10 to use this installer!" $red
     cecho "Please go to the App Store, click on the upgrades tab" $cyan
     cecho "and get the latest version of the operating system" $cyan;
     echo;
     exit 2;
+fi
+
+if [ "$OSXVERSION" == "10.11" ]; then
+    cecho "You are using a pre-release version of OS X!" $red
+    cecho "This works, but has not been fully tested!" $red
+    cecho "You have been warned." $red
 fi
 
 clear
