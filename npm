@@ -4,5 +4,6 @@ bower
 gulp
 jscs
 jshint
+markdown-styles
 sitespeed.io
 stylus
