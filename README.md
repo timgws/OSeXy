@@ -51,7 +51,7 @@ This repository has been forked from [João Cunha](https://github.com/joaocunha)
 * OS X 10.10.3 (Yosemite)
 * OS X 10.10.1 (Yosemite)
 
-Currently only Yosemite is supported, however, newer releases should have support, too.
+Currently only Yosemite & El Capitan is supported, however, newer releases should have support, too.
 
 ## Credits
 Inspired by the work of these fine gentlemen:
