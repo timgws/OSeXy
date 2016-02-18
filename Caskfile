@@ -12,7 +12,7 @@ dropbox
 duet
 firefox
 font-source-code-pro
-github
+Caskroom/cask/github-desktop
 go
 goofy
 google-chrome
@@ -38,6 +38,7 @@ quicklook-csv
 quicklook-json
 rdio
 recordit
+sequel-pro
 screenstagram
 sketch
 skype
