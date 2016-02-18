@@ -23,7 +23,7 @@ for x in `seq 1 $PROC_TIMES`; do
     APPLICATIONS=`cat $FILE | sed -e "${FROM},${TO}!d" | tr '\n' ' '`
     cecho "Launching ${cyan} $COMMAND ${normal}${bold} for the following applications: ${green}${APPLICATIONS}";
 
-    $COMMAND $APPLICATIONS &
+    $COMMAND $APPLICATIONS # &
 
     if [[ $FROM -eq 1 ]]; then FROM=1; LINES_DIV=$((LINES_DIV-1)); else FROM=$(($FROM+1)); fi
     FROM=$(($FROM+$LINES_DIV))
