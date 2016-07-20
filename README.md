@@ -45,6 +45,7 @@ This repository has been forked from [João Cunha](https://github.com/joaocunha)
 
 ## OS X releases supported by OSeXy
 
+* OS X 10.11.6 (El Capitan)
 * OS X 10.11.2 (El Capitan)
 * OS X 10.11.1 (El Capitan)
 * OS X 10.10.5 (Yosemite)
